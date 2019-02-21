@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/more-movie/more-movie"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "找电影112",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true
+}
