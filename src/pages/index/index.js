@@ -5,13 +5,17 @@ const app = getApp();
 
 Page({
 	data: {
-		remind: '加载中',
-		help_status: false,
-		userid_focus: false,
-		passwd_focus: false,
-		userid: '',
-		passwd: '',
-		angle: 0,
+		background: [
+			'http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/bless/save/good_career_blessing.png',
+			'http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/bless/save/good_skin_blessing.png',
+			'http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/bless/save/irresistible_blessing.png',
+		],
+		// background: ['red', 'green', 'blue'],
+		indicatorDots: true,
+		indicatorColor: '#B0F566',
+		indicatorActiveColor: '#FFFFF',
+		autoplay: true,
+		interval: 2000,
 	},
 	onLoad() {
 		var _this = this;

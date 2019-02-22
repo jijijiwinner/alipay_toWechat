@@ -1,21 +1,18 @@
 <!--login.axml-->
-<view class="container">
-  <view class="remind-box" a:if="{{remind}}">
-    <image class="remind-img" src="/images/index/loading.gif"></image>
-  </view>
-  <block a:else>
-  <image class="title" src="/images/more/title.png"></image>
-    <view class="content">
-      <view class="hd" style="transform:rotateZ({{angle}}deg);">
-          <image class="logo" src="/images/more/1.png"></image>
-          <image class="wave" src="/images/more/wave.png" mode="aspectFill"></image>
-          <image class="wave wave-bg" src="/images/more/wave.png" mode="aspectFill"></image>
-      </view>
-      <view class="bd">
-       <view class="confirm-btn" bindtap="bindViewTap">
-            <text class="confirm-text">进入找电影</text>
-        </view>
-      </view>
-    </view>
-  </block>
+<view  style="margin:40rpx 30rpx 30rpx 30rpx">
+  <swiper
+    indicator-dots="{{indicatorDots}}"
+    indicator-color ="{{indicatorColor}}"
+    indicator-active-color = "{{indicatorActiveColor}}"
+    autoplay="{{autoplay}}"
+    style="height:384rpx;border-radius: 20px;"
+  >
+    <block a:for="{{background}}">
+      <swiper-item>
+        <view class="swiper-item" style="height:364rpx;background:url({{item}}) no-repeat center center" ></view>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>
+
+<!-- <view class="section__title"></view> -->

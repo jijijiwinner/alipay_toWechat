@@ -34,7 +34,7 @@ Page({
 		// util.http(dataUrl, this.processDoubanData)
 		var that = this;
 		var url = dataUrl;
-		my.request({
+		my.httpRequest({
 			url: url,
 			method: 'GET',
 			header: {

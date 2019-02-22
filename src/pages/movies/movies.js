@@ -53,7 +53,7 @@ Page({
 	getMovieListData: function (url, settedKey, categoryTitle) {
 		my.showNavigationBarLoading();
 		var that = this;
-		my.request({
+		my.httpRequest({
 			url: url,
 			method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
 			header: {
