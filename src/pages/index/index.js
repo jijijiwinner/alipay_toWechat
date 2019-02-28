@@ -12,7 +12,7 @@ Page({
 		],
 		// background: ['red', 'green', 'blue'],
 		indicatorDots: true,
-		indicatorColor: '#B0F566',
+		indicatorColor: '#FFFFF',
 		indicatorActiveColor: '#FFFFF',
 		autoplay: true,
 		interval: 2000,

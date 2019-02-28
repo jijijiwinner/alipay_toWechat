@@ -1,18 +1,37 @@
 <!--login.axml-->
-<view  style="margin:40rpx 30rpx 30rpx 30rpx">
-  <swiper
-    indicator-dots="{{indicatorDots}}"
-    indicator-color ="{{indicatorColor}}"
-    indicator-active-color = "{{indicatorActiveColor}}"
-    autoplay="{{autoplay}}"
-    style="height:384rpx;border-radius: 20px;"
-  >
-    <block a:for="{{background}}">
-      <swiper-item>
-        <view class="swiper-item" style="height:364rpx;background:url({{item}}) no-repeat center center" ></view>
-      </swiper-item>
-    </block>
-  </swiper>
-</view>
+<view class="index-container">
+  <view class="banner-container" >
+      <view  class="banner">
+        <swiper
+          indicator-dots="{{indicatorDots}}"
+          indicator-color ="{{indicatorColor}}"
+          indicator-active-color = "{{indicatorActiveColor}}"
+          autoplay="{{autoplay}}"
+          style="height:384rpx;border-radius: 20px;"
+        >
+            <block a:for="{{background}}">
+              <swiper-item>
+                <view class="swiper-item" style="height:364rpx;background:url({{item}}) no-repeat center center" ></view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      <view class="adver-container"></view>
+     
 
-<!-- <view class="section__title"></view> -->
+     
+  </view>
+  <view class="goods-list">
+    <view class="goods">
+      <text>
+        <text  class="title">人气爆品</text>
+        <text  class="sub-title">人人pick的黑科技</text>
+        <image class="more-goods" src="/images/more/more.png"></image>   
+      </text>
+       <view class="goods-first">
+        <image class="goods-first-btn" src='http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/good-1-btn.png'></image>
+       </view> 
+     
+    </view>
+  </view>
+</view>

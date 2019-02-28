@@ -1,7 +1,72 @@
-.container {
-	height: 100%;
+ page {
+ 	background: #F2F2F2;
+ }
 
-	.swiper-item {
-		// background-size: cover
-	}
-}
+ .index-container {
+
+ 	height: 100%;
+
+ 	.banner-container {
+ 		background: #ffffff;
+ 		padding: 40rpx 30rpx 30rpx 30rpx;
+
+ 		.banner {
+ 			margin-bottom: 30rpx
+ 		}
+
+ 		.adver-container {
+ 			height: 110rpx;
+ 			background: url(http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/banner_2_1.png) no-repeat center center;
+ 			background-size: cover
+ 		}
+ 	}
+
+ 	.goods-list {
+ 		margin-top: 20rpx;
+ 		background: #ffffff;
+ 		padding: 40rpx 30rpx;
+
+ 		.goods {
+ 			.title {
+ 				background: url(http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/title-bg.png) no-repeat center bottom;
+ 				background-size: 100% 50%;
+ 				font-weight: 800;
+ 				font-family: PingFangSC-Medium;
+ 				font-size: 34rpx;
+ 				columns: #000000;
+ 			}
+
+ 			.sub-title {
+ 				font-family: PingFangSC-Regular;
+ 				font-size: 26rpx;
+ 				color: #CCCCCC;
+ 				letter-spacing: 0;
+ 				margin-left: 11rpx
+ 			}
+
+ 			.more-goods {
+ 				width: 110rpx;
+ 				height: 40rpx;
+ 				float: right
+ 			}
+
+ 			.goods-first {
+ 				margin: 37rpx 0 46rpx 0;
+ 				height: 250rpx;
+ 				background: url(http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/good-1-1.png) no-repeat center center;
+ 				background-size: cover;
+ 				position: relative;
+ 			}
+
+ 			.goods-first-btn {
+ 				width: 127rpx;
+ 				height: 44rpx;
+ 				position: absolute;
+ 				bottom: 0
+ 			}
+ 		}
+ 	}
+
+
+
+ }
