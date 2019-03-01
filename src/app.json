@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/movies/movies",
+    "pages/product-list/product-list",
     "pages/movies/movie-detail/movie-detail",
     "pages/movies/more-movie/more-movie"
   ],
@@ -10,20 +10,20 @@
     "selectedColor": "#4DC289",
     "items": [{
         "pagePath": "pages/index/index",
-        "icon": "images/icon/home-icon.png",
-        "activeIcon": "images/icon/home-icon-active.png",
+        "icon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/home-icon.png",
+        "activeIcon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/home-icon-active.png",
         "name": "首页"
       },
       {
-        "pagePath": "pages/movies/movies",
-        "icon": "images/icon/home-icon.png",
-        "activeIcon": "images/icon/home-icon-active.png",
+        "pagePath": "pages/product-list/product-list",
+        "icon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/product-icon.png",
+        "activeIcon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/product-icon-active.png",
         "name": "产品"
       },
       {
         "pagePath": "pages/movies/movies",
-        "icon": "images/icon/home-icon.png",
-        "activeIcon": "images/icon/home-icon-active.png",
+        "icon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/mine-icon.png",
+        "activeIcon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/mine-icon-active.png",
         "name": "我的"
       }
     ]

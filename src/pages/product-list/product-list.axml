@@ -1,0 +1,90 @@
+<!--index.axml-->
+<view class="index-container">
+    <view class="banner-container" >
+        <view  class="banner">
+          <swiper
+            indicator-dots="{{indicatorDots}}"
+            indicator-color ="{{indicatorColor}}"
+            indicator-active-color = "{{indicatorActiveColor}}"
+            autoplay="{{autoplay}}"
+            style="height:384rpx;border-radius: 20px;"
+          >
+              <block a:for="{{background}}">
+                <swiper-item>
+                  <view class="swiper-item" style="height:364rpx;background:center / cover url({{item}}) no-repeat" ></view>
+                </swiper-item>
+              </block>
+            </swiper>
+          </view>
+        <view class="adver-container"></view>
+       
+  
+       
+    </view>
+    <view class="goods-list" >
+      <block a:for="{{list}}" a:for-item="item">
+        
+          <view class="goods goods-special" a:if="{{item.id==1}}">
+            <text>
+              <text  class="title">人气爆品</text>
+              <text  class="sub-title">人人pick的黑科技</text>
+              <image class="more-goods" src="/images/more/more.png"></image>   
+            </text>
+            <view class="goods-first">
+                <!-- <text  class="title">个人基因组检测</text>
+                <text  class="title">个人基因组检测</text> -->
+                <image class="goods-first-btn" src='http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/good-1-btn.png'></image>
+                <text  class="goods-title">个人基因组检测</text>
+                <text  class="goods-subtitle">深度剖析自我</text>
+                <text  class="goods-price">
+                  <text class="goods-price-icon">¥</text>
+                  499 
+                  <text class="goods-price-font">元</text>
+                </text>
+            </view> 
+          
+          </view>
+          <view class="goods " a:else>
+            <text>
+              <text  class="title">{{item.name}}</text>
+              <text  class="sub-title">{{item.introduction}}</text>
+              <image class="more-goods" src="/images/more/more.png"></image>   
+            </text>
+            <view style="display:flex;width:100%;justify-content: space-between;">
+            <block a:for="{{item.goods}}" a:for-item="element" >
+              <view class="goods-other" style="background: center / cover url({{element.smallPicUrl}}) no-repeat ">
+                <image class="goods-other-btn" src='http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/good-2-btn.png'></image>
+                <text  class="goods-title">个人基因组检测</text>
+                <text  class="goods-subtitle">·女性10项常见肿瘤风险·</text>
+                <text  class="goods-price">
+                  <text class="goods-price-icon">¥</text>
+                  499 
+                  <text class="goods-price-font">元</text>
+                </text>
+              </view> 
+       
+            </block>
+          </view>
+          
+          </view>
+  
+      </block>
+    </view>
+    <view class="gens-bind">
+        <text  class="title">玩转基因</text>
+        <view style="display:flex;width:100%;justify-content: space-between;">
+            <image class=" bind" src='http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/bind.png'></image>
+            <image class=" bind reprot" src='http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/report.png'></image>
+        </view>
+    </view>
+    <view class="gens-lesson">
+        <text  class="title">基因讲堂</text>
+        <scroll-view class="scroll-view-genes" scroll-x="{{true}}"   >
+            <view  class="scroll-view-item scroll-1" style="" ></view>
+            <view  class="scroll-view-item scroll-2" style="" ></view>
+            <view  class="scroll-view-item scroll-3" style="" ></view>
+        </scroll-view>
+       
+    </view>
+  </view>
+  
