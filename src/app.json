@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/product-list/product-list",
     "pages/movies/movie-detail/movie-detail",
-    "pages/movies/more-movie/more-movie"
+    "pages/mine/mine",
+    "pages/login-out/login-out"
   ],
   "tabBar": {
     "textColor": "#4E4E4E",
@@ -21,7 +22,7 @@
         "name": "产品"
       },
       {
-        "pagePath": "pages/movies/movies",
+        "pagePath": "pages/mine/mine",
         "icon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/mine-icon.png",
         "activeIcon": "http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/icon/mine-icon-active.png",
         "name": "我的"

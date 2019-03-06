@@ -1,0 +1,23 @@
+<!-- 退出登录 -->
+<view class="login-out">
+    <view class="number">
+        <text class="title">登录账号</text>
+        <text class="tel">{{telephone}}</text>
+    </view>
+    <view>
+        <view class="btn" >
+        <view class="login-out-btn" hover-class="hover-login-out" onTap="openModal"></view>
+
+        </view>
+    </view> 
+    <modal
+    show="{{modalOpened}}"
+    onModalClick="onModalClick"
+    onModalClose="onModalClose"
+  >
+    <view slot="header">提示</view>
+    若退出登录，一些页面流程需重新登录才可使用
+    <view slot="footer">确定</view>
+
+    </modal>
+</view>

@@ -1,0 +1,116 @@
+<!-- 个人中心 -->
+<view class="mine-container">
+    <!-- 头部 -->
+    <view class="header">
+      <view>
+        <image src="../../images/mine/me-pic.png" mode="widthFix" />
+      </view>
+      <view>
+        <view class="font_color1 font_17  login-icon" a:if="{{telephone}}">尊敬的</view>
+        <view class="font_color1 font_17 login-icon" a:if="{{telephone}}">{{telephone}}</view>
+        <view class="font_color1 font_17 login-icon" a:else>未登录</view>
+      </view>
+      <view>
+        <view onTap='goSetting'>
+          <image class="image setting-icon" src="../../images/mine/setting-icon.png" mode="widthFix" />
+        </view>
+      </view>
+    </view>
+    <view a:if="{{bindCount == 0}}">
+      <!--绑定检测盒子 -->
+      <view class="report report-other margin_30_t ">
+          <image class="icon" src="../../images/mine/bind-icon-left.png"  />
+          <text class="font">绑定检测盒子</text>
+          <image class=" click-icon" src="../../images/mine/bind-icon.png"  />
+          <view class="video-wrapper">
+              <video
+                class="video"
+                controls="controls"
+                ref="video"
+                src="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/other/WeChatSight1.mp4"
+                poster="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/tab/vedio-bg.png"
+              >
+                您的浏览器不支持 video 标签。
+              </video>
+              <text class="title">观看视频，了解如何在家采集</text>
+              <text class="sub-title">刮取口腔内部完成取样，取样过程无痛、无创</text>
+          </view>
+        
+      </view>
+      <!--获取检测报告 -->
+      <view class="report margin_30_t">
+          <image class="icon" src="../../images/mine/report-icon-left.png"  />
+          <text class="font">获取检测报告</text>
+          <image class=" click-icon" src="../../images/mine/report-icon.png"  />
+      </view>
+
+    </view>
+    <view a:else>
+        <view a:if="{{unReturnCount == 0}}">
+          <!--获取检测报告 -->
+          <view class="report">
+              <image class="icon" src="../../images/mine/report-icon-left.png"  />
+              <text class="font">获取检测报告</text>
+              <image class=" click-icon" src="../../images/mine/report-icon.png"  />
+          </view>
+          <!--绑定检测盒子 -->
+          <view class="report report-other margin_30_t ">
+            <image class="icon" src="../../images/mine/bind-icon-left.png"  />
+            <text class="font">绑定检测盒子</text>
+            <image class=" click-icon" src="../../images/mine/bind-icon.png"  />
+            <view class="video-wrapper">
+                <video
+                  class="video"
+                  controls="controls"
+                  ref="video"
+                  src="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/other/WeChatSight1.mp4"
+                  poster="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/tab/vedio-bg.png"
+                >
+                  您的浏览器不支持 video 标签。
+                </video>
+                <text class="title">观看视频，了解如何在家采集</text>
+                <text class="sub-title">刮取口腔内部完成取样，取样过程无痛、无创</text>
+            </view>
+          
+          </view>
+        </view>
+        <view a:else>
+            <!--获取检测报告 -->
+            <view class="report report-other margin_30_t ">
+                <image class="icon" src="../../images/mine/bind-icon-left.png"  />
+                <text class="font">获取检测报告</text>
+                <image class=" click-icon" src="../../images/mine/report-icon.png"  />
+                <view class="copy-wrapper">
+                  <text class="title">你有<text class="bold font-bold ">{{unReturnCount}}</text>份样本等待寄回实验室</text>   
+                  <image class=" copy-icon" src="../../images/mine/copy-icon.png"  />
+                  <text class="copy-font">众安生命物流部，上海市徐汇区钦州北路1001号光启大楼1801室，021-80181502</text>
+                  <view onTap='goCopy' class="copy-btn" hover-class="hover-gocopy"   >
+                  </view>
+                 
+                </view>
+              
+            </view>
+            <!--绑定检测盒子 -->
+            <view class="report report-other margin_30_t margin_30_b">
+              <image class="icon" src="../../images/mine/bind-icon-left.png"  />
+              <text class="font">绑定检测盒子</text>
+              <image class=" click-icon" src="../../images/mine/bind-icon.png"  />
+              <view class="video-wrapper">
+                  <video
+                    class="video"
+                    controls="controls"
+                    ref="video"
+                    src="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/other/WeChatSight1.mp4"
+                    poster="http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/tab/vedio-bg.png"
+                  >
+                    您的浏览器不支持 video 标签。
+                  </video>
+                  <text class="title">观看视频，了解如何在家采集</text>
+                  <text class="sub-title">刮取口腔内部完成取样，取样过程无痛、无创</text>
+              </view>
+            
+            </view>
+        </view>
+    
+    </view>
+</view>

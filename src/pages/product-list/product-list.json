@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "产品"
+  "defaultTitle": "产品",
+  "usingComponents": {
+    "tabs": "../../component/tabs/index",
+    "tab-content": "../../component/tabs/tab-content/index"
+  }
 }

@@ -1,0 +1,178 @@
+page {
+	background: #f2f2f2;
+}
+
+.product-container {
+	.Fixed {
+		position: fixed;
+		top: 0;
+		margin-top: 0;
+		z-index: 99999;
+	}
+
+	.tab-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.goods-list {
+		background: #ffffff;
+		padding: 40rpx 30rpx 4rpx 30rpx;
+		width: 100%;
+
+		.goods {
+			.title {
+				font-weight: 800;
+				font-size: 34rpx;
+				color: #464646;
+			}
+
+			.sub-title {
+				font-weight: 400;
+				font-size: 26rpx;
+				color: #cccccc;
+				letter-spacing: 0;
+				margin-left: 20rpx;
+			}
+
+			.more-goods {
+				width: 110rpx;
+				height: 40rpx;
+				float: right;
+			}
+
+			.goods-first {
+				margin: 20rpx 0 0 0;
+				height: 250rpx;
+				background: url(http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/good-1-1.png)
+					no-repeat center center;
+				background-size: cover;
+				position: relative;
+
+				.goods-title {
+					padding: 31rpx 0 10rpx 29rpx;
+					display: block;
+					font-weight: 800;
+					font-size: 36rpx;
+					color: #464646;
+				}
+
+				.goods-subtitle {
+					font-weight: 400;
+					padding: 0 0 9rpx 29rpx;
+					font-size: 26rpx;
+					line-height: 45rpx;
+					color: #999999;
+					display: block;
+				}
+
+				.goods-price {
+					font-weight: 800;
+					font-size: 37rpx;
+					color: #4dc289;
+					padding-left: 29rpx;
+					letter-spacing: 0.5rpx;
+				}
+
+				.goods-price-icon {
+					font-weight: 800;
+					font-size: 24rpx;
+					color: #4dc289;
+				}
+
+				.goods-price-font {
+					font-weight: 400;
+					font-size: 22rpx;
+					margin-left: 4rpx;
+					color: #aaaaaa;
+				}
+			}
+
+			.good-0 {
+				margin: 30rpx 0 0 0;
+			}
+
+			.goods-other {
+				margin: 5rpx 10rpx 0 0;
+				width: 330rpx;
+				height: 388rpx;
+				position: relative;
+				justify-content: space-between;
+
+				.goods-title {
+					padding: 220rpx 0 5rpx 0;
+					text-align: center;
+					display: block;
+					font-weight: 800;
+					font-size: 30rpx;
+					line-height: 32rpx;
+					color: #ffffff;
+				}
+
+				.goods-subtitle {
+					font-weight: 400;
+					text-align: center;
+					font-size: 22rpx;
+					line-height: 24rpx;
+					color: #ffffff;
+					display: block;
+				}
+
+				.goods-price {
+					position: absolute;
+					top: 81%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-weight: 800;
+					font-size: 32rpx;
+					line-height: 42rpx;
+					color: #ffffff;
+					padding-left: 26rpx;
+					padding-right: 26rpx;
+					opacity: 0.7;
+					border: 1rpx solid #ffffff;
+					border-radius: 24rpx;
+				}
+
+				.goods-price-icon {
+					font-weight: 800;
+					font-size: 24rpx;
+					color: #ffffff;
+				}
+
+				.goods-price-font {
+					font-weight: 400;
+					font-size: 22rpx;
+					line-height: 30rpx;
+					color: #ffffff;
+				}
+			}
+
+			.goods-first-btn {
+				width: 127rpx;
+				height: 44rpx;
+				position: absolute;
+				bottom: 0;
+			}
+
+			.goods-other-btn {
+				width: 116rpx;
+				height: 39rpx;
+				position: absolute;
+				top: 172rpx;
+			}
+		}
+
+		.goods-special {
+			margin-bottom: 46rpx;
+		}
+	}
+
+	.am-tabs-bar-tab ::after {
+		background: url(http://zhonganbio.oss-cn-hzfinance.aliyuncs.com/images/alipay/images/banner_2_1.png)
+			no-repeat center center;
+		background-size: cover;
+	}
+}

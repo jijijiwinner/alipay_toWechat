@@ -1,0 +1,46 @@
+page {
+	background: #F2F2F2;
+}
+
+.login-out {
+	$CDN_PREFIX: 'http://static.zhonganbio.com/images/alipay/images';
+	padding-top: 30rpx;
+
+	.number {
+		background: #ffffff;
+		padding: 33rpx 0 32rpx 48rpx;
+		line-height: 45rpx;
+
+		.title {
+			font-size: 32rpx;
+			color: #000000;
+
+		}
+
+		.tel {
+			font-size: 28rpx;
+			color: #AAAAAA;
+			margin-left: 34rpx
+		}
+	}
+
+
+	.btn {
+		width: 100%;
+		height: 125rpx;
+		position: absolute;
+		bottom: 31rpx;
+	}
+
+	.login-out-btn {
+		margin: 0 60rpx;
+		height: 125rpx;
+		background: center / contain url($CDN_PREFIX+'/login-out-btn.png') no-repeat;
+	}
+
+	.hover-login-out {
+		margin: 0 60rpx;
+		height: 125rpx;
+		background: center / contain url($CDN_PREFIX+'/login-out-hover.png') no-repeat;
+	}
+}

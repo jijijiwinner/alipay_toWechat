@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "管理账户",
+  "usingComponents": {
+    "modal": "../../component/modal/index"
+  }
+}

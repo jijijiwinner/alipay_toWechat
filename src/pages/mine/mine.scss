@@ -1,0 +1,187 @@
+@import 'public';
+
+
+page {
+	background: #F2F2F2;
+}
+
+.mine-container {
+	$CDN_PREFIX: 'http://static.zhonganbio.com/images/alipay/images';
+
+	.header {
+		display: flex;
+		align-items: center;
+		width: 750rpx;
+		// background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 294rpx;
+		background-image: url($CDN_PREFIX+'/tab/mine-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover
+	}
+
+	.header>view {
+		flex: 1;
+	}
+
+	.login-icon {
+		margin-left: -40rpx;
+		line-height: 48rpx
+	}
+
+	.setting-icon {
+		width: 98rpx;
+		height: 100rpx;
+		margin-left: 50rpx
+	}
+
+	.header>view:first-child {
+		text-align: center;
+		flex: 1.5;
+	}
+
+	.header>view:first-child>image {
+		width: 120rpx;
+		height: 120rpx;
+	}
+
+	.header>view:nth-child(2) {
+		flex: 1.5;
+	}
+
+	.header>view:last-child>view {
+		position: relative;
+	}
+
+	.header>view:last-child>view image {
+		position: absolute;
+		top: -0.4rem;
+		color: #fff;
+		width: 98rpx;
+		height: 100rpx;
+	}
+
+	.report {
+		margin-left: 30rpx;
+		margin-right: 30rpx;
+		padding: 38rpx 0 37rpx 42rpx;
+		background: #FFFFFF;
+		box-shadow: 0 8rpx 20rpx 0 rgba(0, 0, 0, 0.08);
+		border-radius: 16rpx;
+
+		.icon {
+			width: 44rpx;
+			height: 41rpx;
+			margin-right: 21rpx
+		}
+
+		.font {
+			font-weight: 400;
+			font-size: 32rpx;
+			color: #000000;
+			letter-spacing: 0;
+			position: absolute;
+			margin-top: 3rpx
+		}
+
+		.click-icon {
+			margin-top: 12rpx;
+			margin-right: 28rpx;
+			width: 138rpx;
+			height: 26rpx;
+			margin-left: 13rpx;
+			float: right;
+		}
+	}
+
+	.report-other {
+		box-shadow: inset 0 -1rpx 0 0 rgba(0, 0, 0, 0.10);
+
+		.video-wrapper {
+			margin-top: 37rpx;
+
+			border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+
+			.video {
+				margin-top: 25rpx;
+				margin-left: auto;
+				margin-right: auto;
+				width: 460rpx;
+				height: 280rpx;
+				border-radius: 10rpx
+			}
+
+			.title {
+				margin-top: 25rpx;
+				text-align: center;
+				display: block;
+				font-size: 30rpx;
+				color: #000000;
+			}
+
+			.sub-title {
+				display: block;
+				font-size: 26rpx;
+				line-height: 37rpx;
+				color: #999999;
+				text-align: center;
+			}
+		}
+
+		.copy-wrapper {
+			margin-top: 37rpx;
+			border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+
+			.title {
+				display: block;
+				margin-top: 25rpx;
+				font-size: 28rpx;
+				color: #333333;
+
+				.bold {
+					font-size: 38rpx;
+					color: #4DC289;
+					margin: 0 5rpx 0 5rpx
+				}
+			}
+
+			.copy-icon {
+
+				width: 241rpx;
+				height: 73rpx;
+				margin-top: 30rpx;
+
+
+			}
+
+			.copy-font {
+				display: block;
+				margin-left: 66rpx;
+				margin-top: -20rpx;
+				margin-right: 51rpx
+			}
+
+			.copy-btn {
+				width: 247rpx;
+				height: 52rpx;
+				margin: 19rpx 0 0 66rpx;
+				background-image: url($CDN_PREFIX+'/tab/copy-btn.png');
+				background-repeat: no-repeat;
+				background-size: contain
+			}
+
+			.hover-gocopy {
+				width: 247rpx;
+				height: 52rpx;
+				margin: 19rpx 0 0 66rpx;
+				background-image: url($CDN_PREFIX+'/tab/copy-icon-active.png');
+				background-repeat: no-repeat;
+				background-size: contain
+			}
+
+
+		}
+	}
+
+
+}
